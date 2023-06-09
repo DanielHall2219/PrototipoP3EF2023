@@ -20,7 +20,7 @@ public class MdiSeguridad extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         this.setExtendedState(MdiSeguridad.MAXIMIZED_BOTH);
-        this.setTitle("");
+        this.setTitle("9959-21-1395 DANIEL ALEXANDER HALL ALVAREZ");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
