@@ -46,6 +46,7 @@ public class MdiSeguridad extends javax.swing.JFrame {
         mnuCatalogosMantenimientos = new javax.swing.JMenu();
         mantenimientoUsuarios = new javax.swing.JMenuItem();
         mantenimientoAplicaciones = new javax.swing.JCheckBoxMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
         mnuProcesos = new javax.swing.JMenu();
         mIAplicacionPerfil = new javax.swing.JMenuItem();
         mnuConsultas = new javax.swing.JMenu();
@@ -120,6 +121,14 @@ public class MdiSeguridad extends javax.swing.JFrame {
             }
         });
         mnuCatalogosMantenimientos.add(mantenimientoAplicaciones);
+
+        jMenuItem3.setText("Mantenimiento Jugador");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        mnuCatalogosMantenimientos.add(jMenuItem3);
 
         mnuCatalogos.add(mnuCatalogosMantenimientos);
 
@@ -248,6 +257,16 @@ public class MdiSeguridad extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_mnuProcesosActionPerformed
 
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+        frmMantenimientoJugador ventana = new frmMantenimientoJugador();
+        jDesktopPane1.add(ventana);
+        Dimension desktopSize = jDesktopPane1.getSize();
+        Dimension FrameSize = ventana.getSize();
+        ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.             height) / 2);
+        ventana.show();
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -293,6 +312,7 @@ public class MdiSeguridad extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem mIAplicacionPerfil;
     private javax.swing.JCheckBoxMenuItem mantenimientoAplicaciones;
